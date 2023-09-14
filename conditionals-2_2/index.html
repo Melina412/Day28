@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>conditionals-2_2-air-quality</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main id="color">
+      <section>
+        <form onsubmit="return false">
+          <label for="index" id="label">AQI: </label>
+          <br />
+          <input
+            onchange="checkAirQuality()"
+            type="range"
+            id="index"
+            min="0"
+            max="150"
+            step="1"
+            value="0"
+          />
+        </form>
+        <p id="concern">Level of health concern:</p>
+        <p id="effect">Level of health effect:</p>
+      </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
